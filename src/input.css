@@ -7,15 +7,55 @@
     margin:0 auto;
     padding:1.5rem;
 }
+.btn{
+    display:inline-block;
+    padding:1rem;
+    border:1px solid transparent;
+}
+.btn.bg--blue{
+    @apply bg-asul hover:bg-[#0060ad] text-light
+}
+
+
 
 @layer components{
-.header .header__text h2{
-    @apply text-[1.3rem] text-white lg:text-red-500
+.header{
+    @apply bg-gurey fixed w-full
+}
+.header .header__wrapper{
+    @apply max-w-[90rem] mx-auto flex items-center justify-between p-[1rem] lg:p-[0rem]
 }
 .header .header__nav{
-    @apply bg-gurey absolute w-full top-[3.9rem] left-0 overflow-y-scroll h-[0rem] text-white lg:h-[100vh]
+    @apply absolute bg-gurey top-[3.5rem] left-0 w-full flex flex-col max-h-[0rem] overflow-y-hidden transition-all lg:static lg:flex-row lg:max-h-fit lg:w-fit
 }
 .header .header__nav.open{
-    @apply h-[18.8rem]
+    @apply max-h-[20.5rem] transition-all overflow-y-scroll lg:overflow-visible
+}
+.header .header__nav li{
+    @apply text-white p-[.5rem] lg:text-gray-300
+}
+.header .header__nav li a{
+    @apply hover:text-white
+}
+.header .branding{
+    @apply flex items-center gap-3
+}
+.header .branding h2{
+    @apply text-light text-[1.2rem]
+}
+.toggle__menu{
+    @apply flex flex-col gap-[.1rem] lg:hidden hover:bg-asul p-[.5rem] rounded
+}
+.toggle__menu span{
+    @apply w-[1.3rem] h-[.2rem] bg-light block rounded
+}
+.header .header__actions ul{
+    @apply lg:flex 
+}
+.header .header__actions ul li {
+   @apply lg:items-center
+}
+.header .header__actions input{
+    @apply lg:h-full  lg:bg-gray-600 lg:text-light lg:px-[2rem]
 }
 }
