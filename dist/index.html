@@ -9,30 +9,33 @@
 <body>
     
     <header class="header w-full bg-gurey">
-        <div class="container">
+        <div class="container !p-[1rem] py-[.5rem] lg:max-w-[70rem]">
             <div class="header__wrapper flex items-center justify-between">
                 <div class="header__text flex gap-3 items-center justify-between">
-                    <img class="w-[2rem]" src="./img/apple-touch-icon.png" alt="">
-                    <h2 class="text-[1.3rem] text-white">Visual Studio Code</h2>
+                    <img class="w-[1.5rem]" src="./img/apple-touch-icon.png" alt="">
+                    <h2>Visual Studio Code</h2>
                 </div>
                 <div class="header__actions ">
-                    <div class="toggle__menu cursor-pointer ">
+                    <div class="toggle__menu cursor-pointer lg:hidden ">
                         <div class="burger flex flex-col gap-[.15rem] items-center hover:bg-asul p-[.5rem] rounded-sm">
                             <span class="w-[1.3rem] bg-white h-[.17rem] block rounded-sm"></span>
                             <span class="w-[1.3rem] bg-white h-[.17rem] block rounded-sm"></span>
                             <span class="w-[1.3rem] bg-white h-[.17rem] block rounded-sm"></span>
                         </div>
-                        <div class="header__nav bg-asul absolute w-full top-[5rem] left-0 overflow-hidden h-[0rem] px-[1rem]">
-                            <ul>
-                                <li><a href="">Docs</a></li>
-                                <li><a href="">Updates</a></li>
-                                <li><a href="">Blog</a></li>
-                                <li><a href="">API</a></li>
-                                <li><a href="">Extensions</a></li>
-                                <li><a href="">FAQ</a></li>
-                                <li><a href="">Learn</a></li>
-                                <li><a href="">Search</a></li>
+                        <div class="header__nav">
+                            <ul class="">
+                                <li class="px-[1rem] my-[.7rem]"><a href="">Docs</a></li>
+                                <li class="px-[1rem] my-[.7rem]"><a href="">Updates</a></li>
+                                <li class="px-[1rem] my-[.7rem]"><a href="">Blog</a></li>
+                                <li class="px-[1rem] my-[.7rem]"><a href="">API</a></li>
+                                <li class="px-[1rem] my-[.7rem]"><a href="">Extensions</a></li>
+                                <li class="px-[1rem] my-[.7rem]"><a href="">FAQ</a></li>
+                                <li class="px-[1rem] my-[.7rem]"><a href="">Learn</a></li>
+                                <li class="px-[1rem] my-[.7rem]"><a href="">Search</a></li>
                             </ul>
+                            <div class="bg-asul p-[.8rem] hover:bg-[#0060ad]">
+                                <a href=""><i class="fa-solid fa-download"></i> Download</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -40,7 +43,32 @@
         </div>
     </header>
 
+    <!-- <section class="banner">
+        <div class="container">
+            <div class="banner__wrapper">
+                <div class="banner__content">
+                    <div class="banner__version">
+                        <h2><a href="">Version 1.80</a> is now available! Read about the new features and fixes from June.</h2>
+                    </div>
+                    <div class="banner__download">
+                        <h3>Code editing.</h3>
+                        <h4>Redefined.</h4>
+                        <p>Free. Built on open source. Runs everywhere.</p>
+                        <a href="">Download For Windows. <span>Stable Build</span></a>
+                        <a href=""></a>
+                        <p><a href="">Web</a>,<a href="">Insiders edition</a>, or <a href="">other platforms</a></p>
+                        <p>By using VS Code, you agree to its <a href="">license and privacy statement.</a></p>
+                    </div>
+                    <img src="./img/home-screenshot-win.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section> -->
 
+    <script src="https://kit.fontawesome.com/d4168f4955.js" crossorigin="anonymous"></script>
 <script src="./js/script.js"></script>    
 </body>
 </html>
+
+
+

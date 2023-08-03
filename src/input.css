@@ -3,7 +3,19 @@
 @tailwind utilities;
 
 .container {
-    max-width:130rem;
+    max-width:90rem;
     margin:0 auto;
     padding:1.5rem;
+}
+
+@layer components{
+.header .header__text h2{
+    @apply text-[1.3rem] text-white lg:text-red-500
+}
+.header .header__nav{
+    @apply bg-gurey absolute w-full top-[3.9rem] left-0 overflow-y-scroll h-[0rem] text-white lg:h-[100vh]
+}
+.header .header__nav.open{
+    @apply h-[18.8rem]
+}
 }
